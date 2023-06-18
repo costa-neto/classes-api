@@ -1,0 +1,64 @@
+{
+    "name": "glofox/classes-api",
+    "description": "A small API for classes and bookings.",
+    "type": "library",
+    "keywords": [
+        "framework",
+        "leaf",
+        "leafPHP",
+        "leaf api"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Neto Costa",
+            "email": "neto1809costa@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "leafs/mvc-core": "*",
+        "leafs/leaf": "^3.3",
+        "leafs/logger": "*",
+        "leafs/cors": "*",
+        "leafs/router": "*",
+        "leafs/auth": "*",
+        "leafs/form": "*",
+        "leafs/bareui": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Db\\": "db/",
+            "Lib\\": "lib/",
+            "App\\": "app/",
+            "Config\\": "config/",
+            "Models\\": "models/",
+            "Helpers\\": "helpers/",
+            "Workers\\": "workers/",
+            "Database\\": "database/",
+            "App\\Http\\": "app/http/",
+            "App\\Utils\\": "app/utils/",
+            "App\\Views\\": "app/views/",
+            "App\\Models\\": "app/models/",
+            "Controllers\\": "controllers/",
+            "App\\Scripts\\": "app/scripts/",
+            "App\\Workers\\": "app/workers/",
+            "App\\Console\\": "app/console/",
+            "App\\Helpers\\": "app/helpers/",
+            "App\\Services\\": "app/services/",
+            "App\\Controllers\\": "app/controllers/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": false
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php -r \"unlink('README.MD'); rename('README2.MD', 'README.MD');\""
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,9 +1,10 @@
 # Classes API
 
-> Maior número romano em uma palavra
+> Glofox is a saas platform for boutiques, studios, and gyms which allows business owners to manage
+their courses, classes, members, memberships etc,.
 
 
-## ⚙️ Tecnologias
+## ⚙️ Technologies
 
 * [PHP 8.1](https://www.php.net/releases/8.1/en.php)
 * [Docker](https://www.docker.com/)
@@ -12,30 +13,29 @@
 * [Leaf](https://leafphp.dev/)
 * [SQLite](https://www.sqlite.org/index.html)
 
-## 💻 Pré-requisitos
+## 💻 Prerequisites
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-* Você instalou a versão mais recente de `Docker`
+Before starting, make sure you:
+* Installed [`Docker` and `Docker-Compose`](https://docs.docker.com/compose/install/)
 
 
-## 🚀 Instalando
+## 🚀 Building
 
-Para instalar o projeto, siga estas etapas:
+To build the project, follow these steps:
 
-Dentro do projeto, execute o comando para criar uma nova imagem a partir da Dockerfile:
+Inside the project folder, run this command to build the container:
 ```
 docker-compose build
 ```
 
 
-## ☕ Usando
-
-Para rodar o projeto, siga estas etapas:
+## ☕  Running
+To run the project, all you have to do is run this command:
 
 ```
 docker-compose up
 
 ```
-Você pode acessar a rota http://localhost:8080/classes e verificar algumas aulas já inseridas para teste.
+You can then access the route http://localhost:8080/classes and check some previously created classes.
 
 

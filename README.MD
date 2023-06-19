@@ -13,6 +13,31 @@ their courses, classes, members, memberships etc,.
 * [Leaf](https://leafphp.dev/)
 * [SQLite](https://www.sqlite.org/index.html)
 
+## 🧱 Structure
+The project is structured with a SQLite database with the following tables:
+```sql
+CREATE TABLE classes(
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    class_name STRING NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    capacity INTEGER NOT NULL
+);
+
+CREATE TABLE bookings (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    booking_date DATE NOT NULL,
+    member_name STRING NOT NULL
+);
+```
+The architecure is based on the Repository-Service Pattern and in the structure given in the skeleton mvc boilerplate provided by leaf.
+Some improvements I would like to make with given time:
+
+- [] Add unit tests
+- [] Improve dependency injection practices
+- [] Add feature to get bookings for each class
+- [] Add caching resources
+
 ## 💻 Prerequisites
 
 Before starting, make sure you:

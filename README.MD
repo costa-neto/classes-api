@@ -38,4 +38,27 @@ docker-compose up
 ```
 You can then access the route http://localhost:8080/classes and check some previously created classes.
 
+The routes are /classes and /bookings, both accept get and post requests, some samples requests are:
+
+`GET - http://localhost:8080/classes/`
+
+`GET - http://localhost:8080/bookings/`
+
+`POST - http://localhost:8080/classes/`
+```json
+{
+    "class_name": "Super Dancing Class",
+    "start_date":"16/07/2023",
+    "end_date":"31/07/2023",
+    "capacity":40
+}
+```
+
+`POST - http://localhost:8080/bookings/`
+```json
+{
+    "member_name": "Neto Costa",
+    "booking_date": "25/06/2023"
+}
+```
 

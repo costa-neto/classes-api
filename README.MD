@@ -33,10 +33,10 @@ CREATE TABLE bookings (
 The architecure is based on the Repository-Service Pattern and in the structure given in the skeleton mvc boilerplate provided by leaf.
 Some improvements I would like to make with given time:
 
-- [] Add unit tests
-- [] Improve dependency injection practices
-- [] Add feature to get bookings for each class
-- [] Add caching resources
+- [ ] Add unit tests
+- [ ] Improve dependency injection practices
+- [ ] Add feature to get bookings for each class
+- [ ] Add caching resources
 
 ## 💻 Prerequisites
 

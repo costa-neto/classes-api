@@ -9,6 +9,10 @@ class BookingsRepository implements BookingsRepositoryInterface {
         return Bookings::all();
     }
 
+    public function getById(int $id): Bookings{
+        return Bookings::where('id', $id)->first();
+    }
+
     public function create(Bookings $new_booking) {
         try {
             $new_booking->save();

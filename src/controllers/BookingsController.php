@@ -26,6 +26,11 @@ class BookingsController extends Controller{
         response()->json($bookings);
     }
 
+    public function getById(int $id) {
+        $booking = $this->bookingsService->getById($id);
+        response()->json($booking);
+    }
+
     public function create() {
         try {
             $payload_data = request()->body();

@@ -22,6 +22,10 @@ class BookingsService implements BookingsServiceInterface {
         return $this->bookingsRepository->all();
     }
 
+    public function getById(int $id) {
+        return $this->bookingsRepository->getById($id);
+    }
+
     public function create(array $payload_data){
         $new_booking = new Bookings;
         $new_booking->member_name = $payload_data['member_name'];

@@ -6,3 +6,5 @@ app()->post('/classes', 'ClassesController@create');
 app()->get('/bookings', 'BookingsController@index');
 
 app()->post('/bookings', 'BookingsController@create');
+
+app()->get('/bookings/{id}', 'BookingsController@getById');
